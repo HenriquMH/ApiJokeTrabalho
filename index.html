@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-div">
+            <h1>piadocas para os cria ☝️🤓</h1>
+        </div>
+    </header>
+
+    <div class="image-container" id="image1"></div>
+    <div class="image-container" id="image2"></div>
+
+    <div id="botoes">
+        <div id="esquerdo" onclick="resizeImages1()">
+            <span>Piadocas</span>
+        </div>
+        <div id="direito" onclick="resizeImages2()">
+            <span>Piadas de cunho duvidosas</span>
+        </div>
+    </div>
+
+    <div id="mudar1">
+        <button onclick="resizeImages1()">👉<br>👉<br>👉</button>
+    </div>
+
+    <div id="mudar2">
+        <button onclick="resizeImages2()">👈<br>👈<br>👈</button>
+    </div>
+
+    <div id="mostrar">
+        <div id="texto">
+            <p id="joke">Clique no botão</p>
+        </div>botaoPiada
+        <button id="botaoPiada" onclick="getSafeJoke()">Obter Piada</button>
+        <button id="botaoPiadaSafe" onclick="getJoke()">Obter Piada</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

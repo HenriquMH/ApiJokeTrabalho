@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Header */
+
+header {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* FUndo */
+
+.image-container {
+  height: 100vh;
+  width: 50%;
+  position: relative;
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: width 0.3s ease;
+}
+
+#image1 {
+  left: 0;
+  background-image: url("_fundA.png");
+}
+
+#image2 {
+  left: 0;
+  float: right;
+  transform: translateY(-100%);
+  background-image: url("_fundV.png");
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+/* Escondido */
+
+#mostrar {
+  display: none;
+}
+
+#joke {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 35%;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #333;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+}
+
+#botaoPiada {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2980b9;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#botaoPiada:hover {
+  background-color: #3d92ca;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#botaoPiadaSafe {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#botaoPiadaSafe:hover {
+  background-color: #ff5722;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+/* setinhas */
+
+#mudar1 {
+  position: absolute;
+  top: 45%;
+  left: 3.3%;
+  transform: scale(3);
+  white-space: pre-line;
+  display: none;
+  margin-left: 0;
+  transition: margin-left 0.3s;
+}
+
+#mudar1:hover {
+  animation: move-emojis 0.5s linear infinite;
+}
+
+#mudar2 {
+  position: absolute;
+  top: 45%;
+  left: 95.5%;
+  transform: scale(3);
+  white-space: pre-line;
+  display: none;
+  margin-left: 0;
+  transition: margin-left 0.3s;
+}
+
+#mudar2:hover {
+  animation: move-emojis 0.5s linear infinite;
+}
+
+@keyframes move-emojis {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 10px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+/*botao geral */
+
+#botoes {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  justify-content: space-around;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* Botão esquerdo */
+
+#esquerdo {
+  display: inline-block;
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+#esquerdo span {
+  position: relative;
+  z-index: 2;
+}
+
+#esquerdo:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0066ff;
+  transition: all 0.35s;
+}
+
+#esquerdo:hover:after {
+  width: 100%;
+}
+
+#esquerdo:hover#esquerdo span {
+  color: #fff;
+  animation: botao-anima ease;
+  animation-duration: 0.3s;
+}
+@keyframes botao-anima {
+  0% {
+    color: black;
+  }
+  50% {
+    color: gray;
+  }
+  100% {
+    color: white;
+  }
+}
+
+/* Botão Direito */
+
+#direito {
+  display: inline-block;
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+#direito span {
+  position: relative;
+  z-index: 2;
+}
+
+#direito:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all 0.35s;
+}
+
+#direito:hover:after {
+  width: 100%;
+}
+
+#direito:hover#direito span {
+  color: #fff;
+  animation: botao-anima ease;
+  animation-duration: 0.3s;
+}
+@keyframes botao-anima {
+  0% {
+    color: black;
+  }
+  50% {
+    color: gray;
+  }
+  100% {
+    color: white;
+  }
+}
