@@ -44,14 +44,14 @@ body {
 
 #image1 {
   left: 0;
-  background-image: url("_fundA.png");
+  background-image: url("imgs/_fundA.png");
 }
 
 #image2 {
   left: 0;
   float: right;
   transform: translateY(-100%);
-  background-image: url("_fundV.png");
+  background-image: url("imgs/_fundV.png");
 }
 
 /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
