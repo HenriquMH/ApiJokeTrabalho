@@ -51,7 +51,7 @@ body {
   left: 0;
   float: right;
   transform: translateY(-100%);
-  background-image: url('../imgs/fundV.png');
+  background-image: url("../imgs/fundV.png");
 }
 
 /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
